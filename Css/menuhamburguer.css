@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+#navMenuHamburguer{
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    top: 0px;
+    padding: 20px 30px 8px;
+    display: none;
+    flex-direction: column;
+    font-family: Poppins;
+    background-color: #424242;
+}
+
+nav #toyota-logo-menu{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#navMenuHamburguer img{
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+#navMenuHamburguer a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    transition: color 0.1s;
+}
+
+#navMenuHamburguer a:hover{
+    color: #da0000;
+}
+
+#navMenuHamburguer a:active{
+    color: #a90000;
+    transition: color 0s;
+}
+
+#navMenuHamburguer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#navMenuHamburguer #botaoFechar{
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    top: -16px;
+    right: -25px;
+    padding: 0px 6px 0px;
+    color: white;
+    font-weight: 1000;
+    border: 1.5px solid white;
+    border-radius: 5px;
+}
+
+#botaoFechar:hover{
+    background-color: #da0000;
+    transition: background 0.1s;
+}

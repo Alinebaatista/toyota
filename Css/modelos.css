@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+
+body{
+    background-color:#f7f7f7;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  
+}
+
+.pagopcoes{
+    margin: 10px;  
+}
+
+.pagopcoes h1{
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.pagopcoes h2{
+    text-align: left;
+    align-items: left;
+    padding-left: 52px;
+    font-size: 30px;
+}
+
+.pagopcoes h3{
+    font-size: 32px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.pagopcoes small{
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+small:hover{
+    color: red;
+}
+
+.pagopcoes img{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    width: 100%;
+
+}
+
+.flex > div{ 
+    position: relative;
+    height: 200px;
+    width: 500px;
+    flex: 1% 1% 100%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    
+}
+
+.flex > div:hover{
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+    background-image:url(https://toyotaassets.scene7.com/is/image/toyota/MIR_MY21_0048_V002_welcome_2?fmt=jpg&fit=crop&qlt=90&hei=330);
+
+  }
+  div.slide-left h1 {
+    animation: slide-left 5s;
+    color:white;
+  }
+ 
+
+  div.slide-left:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=40);
+   
+    
+
+  }
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

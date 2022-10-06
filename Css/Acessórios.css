@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+
+body{
+    background-color:#f7f7f7;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  
+
+}
+
+/*Letras*/
+h6{
+    color: rgb(255, 0, 0);
+    position: relative;
+}
+
+a{
+    text-decoration:none;
+}
+
+h6:before {
+    content: "";/*linha*/
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    bottom: 0;/*linha abaixo da palavra*/
+    left: 85px;
+    background-color: rgb(255, 0, 0);/*cor da linha*/
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+h6:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/*---------------------------------------------------*/
+/*Imagens Acessorios*/
+
+.sessao-carros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.carros{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    width: 280px;
+    border: black;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px 0 rgba(34, 31, 31, 0.2), 0 6px 20px 0 rgba(51, 49, 49, 0.144);
+
+}
+
+.carros:hover{
+    box-shadow: 0 6px 8px 0 rgba(190, 41, 41, 0.247), 0 6px 20px 0 rgba(168, 47, 47, 0.603);
+}
+
+.img_div{    
+   -webkit-transition: -webkit-transform .5s ease;
+    transition: transform 0.5s ease;
+    margin-left:12px;
+    margin-top: 13px;
+    height: 140px;
+    width: 230px;
+
+}
+.img_div:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    border-radius: 15px;
+   
+}
+
+/*--------------------------------------------------*/
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -22deg,
+    #c4c4c4 0%,
+    #ffffff 29%,
+    #ff1361 67%,
+    #131312 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+    background-image:url(../imgs/Serviços/template2.jpg );
+  }
+  div.slide-left h2 {
+    animation: slide-left 5s;
+    color: white;
+  }
+  div.slide-left h5 {
+    animation: slide-left 8s;
+    color: white;
+  }
+  
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

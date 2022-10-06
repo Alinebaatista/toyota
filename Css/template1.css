@@ -1,0 +1,222 @@
+/* CSS Template */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+header{
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252525;
+}
+
+::selection{
+    background-color: #ff4141;
+    color: white;
+}
+
+header .div-header{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header .div-conteudo{
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+header .div-conteudo a{
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 1000;
+    color: white;
+}
+
+header .div-botoes a{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 1000;
+    color: white;
+}
+header .linksHeader{
+    padding-top: 39px;
+    padding-bottom: 32px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header .linksHeader:hover{
+    background-color: #ff0101;
+    color: white;
+    transition: background 0.3s;
+}
+
+/**/
+
+header #botaoLogin{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+header #botaoLogin:hover{
+    color: #f0f0f0;
+    transition: background 0.1s;
+}
+
+header #botaoCadastrar{
+    padding: 5px;
+    background-color: #ff0101;
+    border-radius: 5px;
+    color: white;
+}
+
+header #botaoCadastrar:hover{
+    background-color: #da0000;
+    transition: background 0.4s;
+}
+
+header #botaoCadastrar:active{
+    background-color: #a90000;
+    transition: color 0s;
+}
+
+header #toyotaLogoFullscreen{
+    user-select: none;
+    -webkit-user-drag: none;
+    display: block;
+    margin: 0;
+    width: 40px;
+}
+
+header #toyotaLogoMediaQuery{
+    user-select: none;
+    -webkit-user-drag: none;
+    display: none;
+    margin: 0;
+    width: 130px;
+}
+
+header #menuHamburguer{
+    user-select: none;
+    -webkit-user-drag: none;
+    padding: 2px;
+    display: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/**/
+
+footer{
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #252525;
+}
+
+footer a{
+    margin: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 1000;
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(215, 215, 215);
+}
+
+footer span{
+    font-family: Poppins;
+    color: white;
+    margin: 3px;
+    font-size: 11px;
+}
+
+footer .div-footer{
+    margin: 10px;
+}
+
+footer .div-conteudo-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .div-conteudo-footer #logoToyotaPrata{
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 80px;
+}
+
+/* CSS Template Media Query */
+
+@media (max-width: 940px){
+    body{
+        margin: 0 auto;
+    }
+    
+    header{
+        z-index: 100;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header .div-header{
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .div-conteudo{
+        margin-top: 8px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    
+    header .div-conteudo a{
+        display: none;
+    }
+    
+    header #menuHamburguer{
+        display: block;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    header #toyotaLogoMediaQuery{
+        user-select: none;
+        -webkit-user-drag: none;
+        display: block;
+    }
+
+    header #toyotaLogoFullscreen{
+        user-select: none;
+        -webkit-user-drag: none;
+        display: none;
+    }
+}

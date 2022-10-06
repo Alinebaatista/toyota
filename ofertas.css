@@ -1,0 +1,562 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+body{
+    background-color: rgb(224, 224, 224);
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+}
+
+.div{
+    height: 630px;
+    width: 390px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 2px 20px rgba(172, 172, 172, 0.808);
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .1s ease;
+    transition: transform 0.1s ease;
+    margin: 45px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -0.4px;
+    border-radius: 10px;
+    display: inline-block;
+    border-bottom: 7px solid red;
+    border-top: 2px solid red;
+}
+
+.div:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    color: white;
+}
+
+.img1{
+    height: 200px;
+    width: 320px;
+    margin-top: -10px;
+}
+
+.img1:hover{
+    content: url('imgs/Ofertas/corolla2.png');
+    transform: scale(1.3);
+    transition: .9s;
+}
+
+.img2{
+    height: 200px;
+    width: 320px;
+    margin-top: -10px;
+}
+
+.img2:hover{
+    content: url('imgs/Ofertas/corolla\ xei\ 2.png');
+    transform: scale(1.3);
+    transition: .9s;
+}
+
+.img3{
+    height: 200px;
+    width: 320px;
+    margin-top: -10px;
+}
+
+.img3:hover{
+    content: url('imgs/Ofertas/hilux\ 2.png');
+    transform: scale(1.3);
+    transition: .9s;
+}
+
+.img4{
+    height: 200px;
+    width: 320px;
+    margin-top: -10px;
+}
+
+.img4:hover{
+    content: url('imgs/Ofertas/Camry\ XLE\ Hybrid\ 2.png');
+    transform: scale(1.3);
+    transition: .9s;
+}
+
+.img5{
+    height: 200px;
+    width: 320px;
+    margin-top: -10px;
+}
+
+.img5:hover{
+    content: url('imgs/Ofertas/Yaris\ Hatch\ XL\ 2.png');
+    transform: scale(1.3);
+    transition: .9s;
+}
+
+h4{
+    margin-left: -210px;
+}
+
+p{
+    text-align: center;
+
+    color: black;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.btn-interesse{
+    background-color: rgb(212, 69, 69);
+    border: none;
+    color: white;
+    width: 290px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder; 
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.btn-interesse:hover{
+    background-color: white;
+    color: black;
+    transition: .6s;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-right: .9px solid red;
+}
+
+.p1{
+    text-align: center;
+    margin-left: -10px;
+    font-size: 15px;
+    font-family: Poppins;
+    color: #919191;
+}
+
+.p2{
+    margin-left: 20px;
+    padding-left: 10px;
+    color: rgb(110, 110, 110);
+    line-height: 0px;
+    font-family: Poppins;
+}
+
+.p3{
+    margin-left: 30px;
+    font-family: Poppins;
+}
+
+.p4{
+    margin-left: 50px;
+    padding-left: 10px;
+    color: rgb(110, 110, 110);
+    line-height: 0px;
+    font-family: Poppins;
+}
+
+.p5{
+    margin-left: 60px;
+    font-family: Poppins;
+}
+
+hr{
+    border-color: rgb(233, 233, 233);
+}
+
+/*---------------------Página 2-------------------------*/
+
+.body2{
+    background-color: #edf2f6;
+}
+
+div.slide-left {  /*Titulo Corolla Cross*/
+    width:100%;
+    overflow:hidden;
+  }
+  div.slide-left h2 {
+    animation: slide-left 10s;
+  }
+  
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  /*Carrossel*/
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(8, 8, 8);
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #919191;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.animate-charcter /*Titulo pág 2*/
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -22deg,
+    #c4c4c4 0%,
+    #ffffff 29%,
+    #ff1327 75%,
+    #131312 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200%;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+  
+}
+
+.faixa{
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    color: gray;
+    font-size: 20px;
+    padding-left: 89px;
+    padding-top: 11px;
+    text-align: left;
+    padding: auto;
+}
+
+.btn-voltar{
+    width: 50px;
+    height: 40px;
+    margin-top: auto;
+    margin-left: -70px;
+    color: white;
+    background-color: rgba(214, 57, 57, 0);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.btn-voltar:hover{
+    background-color: #bbbbbb;
+    color: black;
+}
+
+.icon-voltar{
+    width: 100%;
+    height: 100%;
+}
+
+.estilo2{
+    margin-top: 300px;
+    padding: 5px;
+    line-height: 0px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    animation: slide-slow 5s;
+    overflow:hidden;
+    
+}   
+ @keyframes estilo2 {
+      from {
+        margin-left: 100%;
+      }
+    
+      to {
+        margin-left: 0%;
+      }
+    }
+
+.txt{
+    margin-left: -50px;
+}
+
+.estilo1{
+    height: 630px;
+    background-color: #edf2f6;
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .1s ease;
+    transition: transform 0.1s ease;
+    margin: 45px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -0.4px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.form1{
+    width: 500px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 21px;
+    border-radius: 10px;
+}
+
+textarea:focus, input:focus { /*Tira a borda do input quando clicado*/
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.texto{
+    font-family: Poppins;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.texto1{
+    font-family: Poppins;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 70px;
+    text-align: center;
+}
+
+h2{
+    font-family: Poppins;
+    padding-left: 30px;
+}
+
+.select{
+    width: 500px;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.option{
+    align-items: center;
+    text-align: center;
+    max-width: 560px;
+    max-height: 60px;
+}
+
+.p02{
+    text-align: left;
+    margin-left: 320px;
+    font-family: Poppins;
+    color: black;
+    font-size: 18px;
+    padding-bottom: 2px;
+    display: flex;
+}
+
+.p03{
+    text-align: left;
+    margin-left: 320px;
+    font-family: Poppins;
+    color: black;
+    font-size: 18px;
+    padding-top: 16px;
+}
+
+.button2{
+    height: 70px;
+    width: 300px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(219, 118, 118);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.button2:hover{
+    background-color: rgb(221, 57, 57);
+    transition: 0.3s;
+}
+
+.input-dominio { /*TAMANHO DA BOLINHA DO RADIO*/
+    width: 20px;;
+    height: 20px;
+    margin: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.of{
+    text-align: center;
+    margin-left: -422px;
+    color: black;
+    line-height: 0px;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.of1{
+    text-align: left;
+    color: black;
+    font-size: 24px;
+    line-height: 0px;
+    margin-left: 200px;
+    margin-right: 420px;
+    display: flex;
+}
+
+.of2{
+    text-align: left;
+    font-size: 24px;
+    margin-left: 176px;
+    margin-right: 420px;
+    display: flex;
+}
+
+.of3{
+    text-align: left;
+    align-items: center;
+    line-height: 0px;
+    color: black;
+    font-size: 24px;
+    margin-left: -210px;
+    margin-right: 100px;
+    display: flex;  
+}
+
+.of4{
+    font-size: 24px;
+    text-align: left;
+    align-items: center;
+    margin-left: -190px;
+    margin-right: 180px;
+}
+
+.of5{
+    text-align: center;
+    margin-top: -5px;
+    margin-left: 320px;
+    line-height: 1px;
+    font-size: 25px;
+}
+
+.hr2{
+    color: rgb(153, 153, 153);
+    margin-top: -7px;
+    text-align: center;
+    size: 0.2;
+    width: 70%;
+}

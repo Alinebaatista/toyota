@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+body{
+    background-color:#f7f7f7;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  
+}
+.corpo{
+    width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.form{
+  background-color: #fbfbfb; 
+  padding: 5px;
+  width: 250px;
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: #ce3232; 
+margin-top: 10px;  
+padding-left: 10px;
+  margin-bottom: 20px; 
+  height: 25px;
+
+}
+.form1{
+  background-color: #fbfbfb; 
+  padding: 5px;
+  border-radius: 45px;
+border-style: solid; 
+border-width: 1px; 
+border-color: #e22e2e; 
+margin-top: 10px;  
+padding-left: 10px;
+ margin-bottom: 20px; 
+  width: 50px;
+  height: 25px;
+}
+.form2{
+  background-color: #fbfbfb; 
+  padding: 5px;
+  width: 250px;
+  height: 25px;
+  border-radius: 45px;
+ border-style: solid; 
+ border-width: 1px; 
+ border-color: #000000; 
+ margin-top: 10px;  
+ padding-left: 10px;
+ margin-bottom: 20px; 
+
+}
+option{
+  background-color: white;
+  color: #e22e2e;
+}
+option::after{
+  background-color: rgb(173, 166, 166);
+  color: #e22e2e;
+}
+.p-estilo{
+color: #000000;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1-estilo{
+color: #000000;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="file"],
+#contact input[type="email"],
+#contact button[type="submit"],
+#contact input[type="tel"]{
+  width: 250px;
+  border: 1px solid rgb(26, 25, 25);
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 45px;
+}
+
+
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 200px;
+  border: none;
+  background: #cf3852;
+ 
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #f3062d;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+
+#contact input[type="text"]:hover,
+#contact input[type="file"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid red;
+}

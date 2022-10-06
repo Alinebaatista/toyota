@@ -1,0 +1,246 @@
+/* CSS Template */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+::selection{
+    background-color: #ff4141;
+    color: white;
+}
+
+body{
+    margin: 0 auto;
+}
+
+header{
+    z-index: 800;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+header .div-header{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header .div-conteudo{
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+header .div-conteudo a{
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 1000;
+    color: white;
+}
+
+header .div-botoes a{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 1000;
+    color: #424242;
+}
+
+header .linksHeader{
+    padding-top: 39px;
+    padding-bottom: 32px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header .linksHeader:hover{
+    background-color: #ff0101;
+    color: white;
+    transition: background 0.3s;
+}
+
+/**/
+
+header #botaoLogin{
+    padding: 5px;
+    border-radius: 5px;
+    color: #b3b3b3;
+    font-size: 15px;
+}
+
+header #botaoLogin:hover{
+    color: #f0f0f0;
+}
+
+header #botaoCadastrar{
+    padding: 6px;
+    background-color: #ff0101;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+header #botaoCadastrar:hover{
+    background-color: #da0000;
+    transition: background 0.4s;
+}
+
+header #botaoCadastrar:active{
+    background-color: #a90000;
+    transition: color 0s;
+}
+
+header #toyotaLogoFullscreen{
+    -webkit-user-drag: none;
+    display: block;
+    margin: 0;
+    width: 40px;
+}
+
+header #toyotaLogoMediaQuery{
+    -webkit-user-drag: none;
+    display: none;
+    margin: 0;
+    width: 130px;
+}
+
+header #menuHamburguer{
+    padding: 2px;
+    display: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/**/
+
+footer{
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #252525;
+}
+
+footer a{
+    margin: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 1000;
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(215, 215, 215);
+}
+
+footer span{
+    font-family: Poppins;
+    color: white;
+    margin: 3px;
+    font-size: 11px;
+}
+
+footer .div-footer{
+    margin: 10px;
+}
+
+footer .div-conteudo-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .div-conteudo-footer #logoToyotaPrata{
+    -webkit-user-drag: none;
+    width: 80px;
+}
+
+/* CSS Template Media Query */
+
+@media (max-width: 880px){
+    
+    body{
+        margin: 0 auto;
+    }
+    
+    header{
+        z-index: 799;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+    
+    header .div-header{
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .div-conteudo{
+        margin-top: 8px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    
+    header .div-conteudo a{
+        display: none;
+    }
+    
+    header #menuHamburguer{
+        -webkit-user-drag: none;
+        display: block;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    header #toyotaLogoMediaQuery{
+        display: block;
+    }
+
+    header #toyotaLogoFullscreen{
+        display: none;
+    }
+}
+
+
+ 
+.dropdown {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #050505;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ff0101;color: white;}
+  
+  .dropdown:hover .dropdown-content {display: block;}

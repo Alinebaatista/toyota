@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    font-family: Poppins;
+}
+
+.titulos{
+    z-index: 10;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulos h1{
+    font-size: 40px;
+}
+
+.titulos p{
+    font-size: 25px;
+}
+
+.titulos h1, p{
+    margin: 5px;
+    font-weight: 800;
+}
+
+main {
+    height: 10px;
+
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+#sec-boas-vindas{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/home/redb.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+
+    #sec-boas-vindas h1{
+        margin-top: 80px;
+        font-size: 80px;
+        margin-bottom: 80px;
+        color: white;
+    }
+
+    #sec-boas-vindas img{
+        -webkit-user-drag: none;
+        width: 120px;
+        margin-right: 10px;
+    }
+
+#botoesModelos{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+    #botoesModelos #botao1{
+        background-color: #ff0101;
+        color: white;
+    }
+
+    #botoesModelos div{
+        cursor: pointer;
+        margin: 10px;
+        width: 160px;
+        padding: 5px;
+        border: 1px solid #ff0101;
+        text-align: center;
+        color: #ff0101;
+        font-weight: bolder;
+        z-index: 100;
+    }
+
+    #botoesModelos div:hover{
+        background-color: #ff0101;
+        color: white;
+    }
+
+#sec-modelos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+
+    margin-bottom: 40px;
+}
+
+.div-corpo-carros{
+    cursor: pointer;
+    margin: 50px;
+    margin-top: -200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 10;
+
+    transition: 0.5s;
+}
+
+.div-corpo-carros:hover{
+    transform: scale(1.09);
+    border-bottom: 5px solid red;
+}
+
+    .div-corpo-carros .shapes{
+        user-select: none;
+        -webkit-user-drag: none;
+        position: relative;
+        top: 260px;
+        z-index: 1;
+        object-fit: cover;
+        width: 210px;
+        height: 210px;
+    }
+
+    .div-corpo-carros h2{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .div-corpo-carros hr{
+        width: 300px;
+        border: 1px solid #da0000;
+    }
+
+    .div-corpo-carros img{
+        user-select: none;
+        -webkit-user-drag: none;
+        position: relative;
+        z-index: 6;
+        object-fit: cover;
+        width: 400px;
+        height: 240px;
+    }
+
+    .div-corpo-carros a{
+        text-decoration: none;
+        font-weight: 900;
+        color: #da0000;
+        border: 1px solid #da0000;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: 0.2s;
+    }
+
+    .div-corpo-carros a:hover{
+        background-color: #da0000;
+        color: white;
+    }
+
+    #sec-modelos h1{
+        margin-bottom: 1px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    #sec-modelos p{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin: 1px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+#sec-concessionaria{
+    padding-top: 30px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3b3b3b;
+}
+
+    #sec-concessionaria #img-concessionaria{
+        position: static;
+        user-select: none;
+        -webkit-user-drag: none;
+        width: 600px;
+    }
+
+    #sec-concessionaria div{
+        z-index: 5;
+        width: 510px;
+        margin: 10px;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    #sec-concessionaria h1{
+        margin-top: -10px;
+        font-weight: 1000;
+    }
+
+    #sec-concessionaria #concessionaria-input[type=text]{
+        font-family: Poppins;
+        padding: 10px;
+        width: 93%;
+    }
+
+    #sec-concessionaria div button{
+        cursor: pointer;
+        width: 98%;
+        margin-top: 5px;
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 1000;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        padding-left: 55px;
+        padding-right: 55px;
+        background-color: #3b3b3b;
+        transition: background 0.2s;
+    }
+
+    #sec-concessionaria div button:hover{
+        background-color: white;
+        color: #3b3b3b;
+    }
+
+    #sec-concessionaria div button:active{
+        background-color: rgb(220, 220, 220);
+        border-color: rgb(220, 220, 220);
+        transition: none;
+    }
+
+#sec-atendimento{
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../imgs/home/ondas2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    #sec-atendimento #img-atendente{
+        position: static;
+        user-select: none;
+        -webkit-user-drag: none;
+        width: 400px;
+        height: 350px;
+    }
+
+    #sec-atendimento div{
+        z-index: 5;
+        width: 510px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 0px 30px;
+        border: 1px solid #ff0101;
+        padding: 20px;
+        box-shadow: 3px 3px #db0000;
+    }
+
+    #sec-atendimento h1{
+        font-weight: 1000;
+    }
+
+    #sec-atendimento #atendimento-input[type=text]{
+        font-family: Poppins;
+        padding: 10px;
+        width: 93%;
+    }
+
+    #sec-atendimento div button{
+        cursor: pointer;
+        width: 98%;
+        margin-top: 5px;
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 1000;
+        background-color: #ff0101;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    #sec-atendimento div button:hover{
+        background-color: #da0000;
+        transition: background 0.4s;
+    }
+
+    #sec-atendimento div button:active{
+        background-color: #a50000;
+        transition: none;
+    }
+
+#sec-main-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+    #sec-main-cards .card-corpo{ 
+        margin: 25px;
+        padding: 20px;
+        width: 400px;
+        transition: 0.2s;
+    }
+
+    #sec-main-cards .card-corpo:hover{
+        transform: scale(1.03);
+        box-shadow: 3px 3px 3px 3px #636363;
+    }
+
+    #sec-main-cards .card-corpo img{
+        object-fit: cover;
+        width: 400px;
+        height: 240px;
+        border-radius: 0px 20px;
+    }
+
+    #sec-main-cards .card-corpo hr{
+        width: auto;
+        border: 1px solid #ff0101;
+    }
+
+    #sec-main-cards .card-corpo h2{
+        text-align: center;
+        margin: 5px;
+        font-weight: 1000;
+        color: #424242;
+    }
+
+    #sec-main-cards .card-corpo p{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        color: #636363;
+    }
+
+    #sec-main-cards .card-corpo a:hover{
+        transition: 0.2s;
+        background-color: #a50000;
+    }
+
+    /**/
+
+    #sec-main-cards .card-corpo .link-card{
+        margin-top: 15px;
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 1000;
+        background-color: #ff0101;
+        border-radius: 5px;
+        color: white;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    #sec-main .card-corpo .link-card:hover{
+        background-color: #da0000;
+        transition: background 0.4s;
+    }
+
+#sec-atendimento{
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../imgs/home/ondas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    #sec-atendimento #img-atendente{
+        display: block;
+        position: static;
+        user-select: none;
+        -webkit-user-drag: none;
+        width: 400px;
+        height: 350px;
+    }
+
+    #sec-atendimento div{
+        z-index: 5;
+        width: 510px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 0px 30px;
+        border: 1px solid #ff0101;
+        padding: 20px;
+        box-shadow: 3px 3px #db0000;
+    }
+
+    #sec-atendimento h1{
+        font-weight: 1000;
+    }
+
+    #sec-atendimento #atendimento-input[type=text]{
+        font-family: Poppins;
+        padding: 10px;
+        width: 93%;
+    }
+
+    #sec-atendimento div button{
+        cursor: pointer;
+        width: 98%;
+        margin-top: 5px;
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 1000;
+        background-color: #ff0101;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    #sec-atendimento div button:hover{
+        background-color: #da0000;
+        transition: background 0.4s;
+    }
+
+    #sec-atendimento div button:active{
+        background-color: #a50000;
+        transition: none;
+    }
+
+#sec-mundo-toyota{
+    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    color: white;
+}
+
+    #sec-mundo-toyota #mundo-toyota-titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+        #mundo-toyota-titulo h1{
+            margin: 1px;
+            font-size: 50px;
+        }
+
+        #mundo-toyota-titulo p{
+            font-weight: 100;
+            font-size: 18px;
+        }
+
+    #mundo-toyota-conteudo{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #mundo-toyota-conteudo div{
+            cursor: pointer;
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        #mundo-toyota-conteudo div:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 5px #ff0101;
+        }
+
+        #mundo-toyota-conteudo h3{
+            margin: 15px;
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+
+        #mundo-toyota-conteudo img{
+            width: 350px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+    #noticia-principal{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #noticia-principal img{
+        margin-bottom: 10px;
+        border-radius: 20px 0px;
+        width: 430px;
+    }
+
+    #noticia-principal h3{
+        margin: 5px;
+    }
+
+    #noticia-principal p{
+        font-weight: 100;
+    }
+
+    #noticia-principal hr{
+        margin: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: auto;
+        border: 1px solid #ff0101;
+    }
+
+    #titulo-e-desc{
+        margin: 10px;
+    }
+
+    #titulo-e-desc p{
+        margin-bottom: 20px;
+    }
+
+    #titulo-e-desc a{
+        text-decoration: none;
+        margin: 5px;
+        padding: 10px;
+        color: white;
+        border: 1px solid white;
+        transition: 0.2s;
+    }
+
+    #titulo-e-desc a:hover{
+        background-color: white;
+        color: #424242;
+    }
+
+.sec-boas-vindas-media-query{
+    display: none;
+}
+
+/**/
+
+@media (max-width: 800px){
+
+    .sec-boas-vindas-media-query span{
+        position: relative;
+        bottom: 150px;
+        z-index: 10;
+        font-size: 40px;
+        font-weight: 1000;
+    }
+
+    .sec-boas-vindas-media-query{
+        background-image: url(../img/red-grid.png);
+        background-size: cover;
+
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec-boas-vindas-media-query div{
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .sec-boas-vindas-media-query #blob-1, #blob-2{
+        opacity: 0.8;
+        user-select: none;
+        -webkit-user-drag: none;
+        position: relative;
+        margin: 20px;
+        width: 110%;
+        height: 110%;
+    }
+
+    #blob-1{ bottom: 10px; }
+
+    #blob-2{ top: 260px; }
+
+    /**/
+
+    .sec-boas-vindas{
+        display: none;
+    }
+
+    /**/
+    /**/
+    /**/
+
+    #sec-atendimento #img-atendente{
+        z-index: 4;
+        position: relative;
+        top: 40px;
+        user-select: none;
+        -webkit-user-drag: none;
+        width: 400px;
+        height: 350px;
+    }
+
+    /**/
+    /**/
+    /**/
+
+    #sec-mundo-toyota #mundo-toyota-titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #noticia-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    /**/
+
+    #sec-concessionaria{
+        padding-bottom: 30px;
+    }
+
+    #sec-concessionaria #img-concessionaria{
+        display: none;
+    }
+}

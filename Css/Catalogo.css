@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+
+body{
+    background-color:#f7f7f7;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  
+}
+
+.sessao-catalogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #edf2f6;
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: white;
+    width: 350px;  
+    box-shadow: 0 6px 8px 0 rgba(107, 107, 107, 0.2), 0 6px 20px 0 rgba(133, 131, 131, 0.144);
+ 
+}
+.catalogo:hover{
+    box-shadow: 0 6px 8px 0 rgba(34, 31, 31, 0.2), 0 6px 20px 0 rgba(36, 34, 34, 0.144);
+}
+
+
+.btn{
+    color: black;
+    font-size: 50px;
+    background-color:#f7f7f7;
+    border: 0;
+
+}
+
+.btn:hover{
+    color: black;
+    font-size: 50px;
+    background-color:#f7f7f7;
+    border: 0;
+    cursor: pointer;
+
+}
+
+
+td{
+    align-items: center;
+    text-align: center;
+    margin-left: 500px;
+
+}
+
+
+.faixa{
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-left: 89px;
+    padding-top: 11px;
+    text-align: left;
+    padding: auto;
+}
+
+.btn-voltar{
+    width: 50px;
+    height: 40px;
+    margin-top: auto;
+    margin-left: -70px;
+    color: white;
+    background-color: rgba(214, 57, 57, 0);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.btn-voltar:hover{
+    background-color: #bbbbbb;
+    color: black;
+}
+
+.icon-voltar{
+    width: 100%;
+    height: 100%;
+}
+
+.buy{
+    padding: 10px;
+    background-color: #ff0101;
+    color: white;
+    font-size: 13px;
+    border: 0;
+    width: 130px;
+    margin-top: 50px;
+}
+
+.buy:hover{
+    background-color: #da0000;
+    transition: background 0.4s;
+}
+
+.buy:active{
+    background-color: #a90000;
+    transition: color 0s;
+}
+
+.new{
+    background-color: rgb(81, 81, 207);
+}
+
+
+.icon{
+    width: 50px;
+    height: 55px;
+    display: flex;
+    margin-top: 10px;
+    padding-top: 20px;
+    margin-left: 5px;
+  }

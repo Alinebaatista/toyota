@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: Poppins;
+}
+
+
+body{
+    background-color:#f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+  
+}
+
+  /*Slider*/
+
+
+  * {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin:  0;
+  
+  
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(241, 237, 237);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #f30808;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
+}
+
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  
+  
+}
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f30808;
+  color: rgb(0, 0, 0);
+
+}
+
+
+/*Serviçõs sections*/
+
+.sessao-servicos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top:30px;
+  
+
+}
+
+.catalogo{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: rgb(60, 58, 151);
+  width: 350px;
+  color: white;
+  border-radius: 5px;
+
+
+}
+.catalogo:hover{
+  box-shadow: 0 6px 8px 0 rgba(34, 31, 31, 0.2), 0 6px 20px 0 rgba(51, 49, 49, 0.144);
+  background-color: grey;
+  transform: scale(1.02);
+}
+
+
+.icon{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  margin-top: 10px;
+  padding-top: 20px;
+  margin-left: 150px;
+}
+.title{
+  margin-top:20;
+  font-size: 20px;
+}
+
+h6{
+  margin-left: 35px;
+  color: white;
+  font-family: Poppins;
+  margin-top: 20px;
+  font-size: 15px;
+  
+}
+
+.btn{
+  width: 100px;
+  padding: 10px;
+  background-color: rgb(60, 58, 151);
+  color: white;
+  border: 0;
+  align-items: center;
+  margin-left: 135px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+
+a{
+color: white;
+text-decoration:none;
+}
